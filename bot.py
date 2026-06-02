@@ -1,7 +1,8 @@
+import os
 from telegram import Update
 from telegram.ext import Application, MessageHandler, ContextTypes, filters
 
-BOT_TOKEN = ""
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
 async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE):
